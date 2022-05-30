@@ -42,7 +42,6 @@ import AppButton from '~/components/Ui/AppButton';
 import AppFormInput from '~/components/Ui/AppFormInput';
 import AppFormLabel from '~/components/Ui/AppFormLabel';
 import AppFormSelect from '~/components/Ui/AppFormSelect';
-import categoriesVue from '~/pages/categories.vue';
 
 export default {
   name: "TransactionAdd",
@@ -72,13 +71,18 @@ export default {
 
   methods: {
     addTransaction() {
-      this.$store.dispatch('transactions/addTransaction', this.form).then(() => {
+      this.$store.dispatch('transactions/addTransaction', this.form).then((response) => {
+        this.$emit('after-add', {
+          ...response, 
+          category: this.categories.find(obj => obj.id == this.form.categoryId)
+        });
+        // Limpar campos do Form
         this.form = {
           date: "",
           amount: 0,
           description: "",
           categoryId: 0,
-        }
+        };
       });
     },
     onCancel() {

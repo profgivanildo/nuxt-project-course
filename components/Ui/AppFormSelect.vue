@@ -6,9 +6,9 @@
     <option value="">Selecione</option>
     <option
       v-for="option in options"
-      :key="option.name"
+      :key="option.id"
       :value="option.id"
-      :selected="value === option.name"
+      :selected="value === option.id"
     >
       {{ option.name }}
     </option>

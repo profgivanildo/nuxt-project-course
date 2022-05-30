@@ -5,7 +5,7 @@
       "description": "Pagamento de domínio .com.br",
       "amount": 40,
       "date": "2022-01-01",
-      "categoryId": 1
+      "categoryId": "5"
     },
     {
       "id": 2,
@@ -38,35 +38,35 @@
     {
       "id": 6,
       "description": "Cinema",
-      "amount": 60,
+      "amount": "100",
       "date": "2022-01-10",
       "categoryId": 4
     },
     {
       "id": 7,
-      "description": "Restaurante",
+      "description": "Restaurante e comidinhas",
       "amount": 100,
       "date": "2022-01-10",
       "categoryId": 4
     },
     {
       "id": 8,
-      "description": "Google stcok",
-      "amount": 100,
+      "description": "Google Stock",
+      "amount": "-200",
       "date": "2022-01-15",
-      "categoryId": 5
+      "categoryId": 1
     },
     {
-      "date": "2022-05-27",
-      "amount": "123",
-      "description": "Teste de insert transaction",
-      "categoryId": "Equipamentos de TI, assinatura de softwares e cursos",
+      "date": "2022-05-09",
+      "amount": "-321",
+      "description": "Teste de update na lista",
+      "categoryId": 1,
       "id": 9
     },
     {
-      "date": "2022-05-18",
-      "amount": "3232",
-      "description": "Novo teste de insert",
+      "date": "2022-05-10",
+      "amount": "344",
+      "description": "Mais um teste de insert",
       "categoryId": "2",
       "id": 10
     }
